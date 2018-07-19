@@ -21,6 +21,8 @@ namespace test
             .UseStartup<Startup>()
             .UseUrls("http://0.0.0.0:80/")
             .Build();
+
+            host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
